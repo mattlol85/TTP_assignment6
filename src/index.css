@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.search-res{
+  border: lightblue solid;
+  width: 350px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.city{
+  background-color: #61dafb;
+  padding: 10px;
+}

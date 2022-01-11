@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import SearchResults from "./SearchResults";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SearchResults zip={11224}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
