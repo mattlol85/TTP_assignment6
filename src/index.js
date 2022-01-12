@@ -7,7 +7,7 @@ import SearchResults from "./SearchResults";
 
 ReactDOM.render(
   <React.StrictMode>
-    <SearchResults zip={11224}/>
+    <SearchResults />
   </React.StrictMode>,
   document.getElementById('root')
 );
