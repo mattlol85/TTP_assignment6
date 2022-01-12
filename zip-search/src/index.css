@@ -23,3 +23,21 @@ code {
   background-color: #61dafb;
   padding: 10px;
 }
+#navbar{
+  background-color: darkkhaki;
+  padding: 40px;
+  text-align: center;
+}
+
+#input-box{
+  margin-top: 50px;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  background-color: darkkhaki;
+}
+
+#no-res{
+text-align: center;
+}

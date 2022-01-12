@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SearchResults from "./SearchResults";
+import InputBox from "./InputBox"
+import Navbar from "./Navbar"
 
 ReactDOM.render(
   <React.StrictMode>
-    <SearchResults zip={11224}/>
+    <Navbar/>
+    <InputBox/>
   </React.StrictMode>,
   document.getElementById('root')
 );

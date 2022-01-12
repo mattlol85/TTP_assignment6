@@ -4,13 +4,14 @@ function SearchResults(props){
 
     const[data, setData] = useState(null)
     const url = `https://ctp-zip-api.herokuapp.com/zip/${props.zip}`
+
     useEffect(() => {
         fetch(`https://ctp-zip-api.herokuapp.com/zip/${props.zip}`)
             .then(res => res.json())
             .then(ret => setData(ret))
     },[url])
 
-    if(data) {
+    if(data && props.zip.length>4 && props.zip.length<6) {
         console.log(data)
         return (
             <div id={"results"}>
@@ -29,8 +30,9 @@ function SearchResults(props){
             </div>
         )
     }
+    
     return(
-        <div><h2>No Results</h2></div>
+        <div id="no-res"><h2>No Results</h2></div>
     )
 
 }
