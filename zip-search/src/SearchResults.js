@@ -12,23 +12,26 @@ function SearchResults(props){
     },[url])
 
     if(data && props.zip.length>4 && props.zip.length<6) {
-        console.log(data)
-        return (
-            <div id={"results"}>
-                {data.map((elm)=>{
-                    return( <div className={"search-res"}>
-                            <h2 className={"city"}>{elm.LocationText}</h2>
-                            <ul>
-                                <li>{elm.State}</li>
-                                <li>{elm.Location}</li>
-                                <li>{elm.EstimatedPopulation}</li>
-                                <li>{elm.TotalWages}</li>
-                            </ul>
-                        </div>
-                    )
-                })}
-            </div>
-        )
+        if(data[0].Zipcode === props.zip) {
+            console.log("success")
+            console.log(data)
+            return (
+                <div id={"results"}>
+                    {data.map((elm) => {
+                        return (<div className={"search-res"}>
+                                <h2 className={"city"}>{elm.LocationText}</h2>
+                                <ul>
+                                    <li>{elm.State}</li>
+                                    <li>{elm.Location}</li>
+                                    <li>{elm.EstimatedPopulation}</li>
+                                    <li>{elm.TotalWages}</li>
+                                </ul>
+                            </div>
+                        )
+                    })}
+                </div>
+            )
+        }
     }
     
     return(
