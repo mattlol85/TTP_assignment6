@@ -5,9 +5,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  background-color: #5CDB95;
+  background-color: black;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 code {
@@ -17,16 +18,25 @@ code {
 
 .search-res{
   border: lightblue solid;
+  background-color: #3500d3;
+  color: white;
   width: 350px;
   margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 30px;
 
 }
 
 .city{
-  background-color: #61dafb;
+  text-align: center;
+  color: #0C0032;
+  background-color: #282828;
   padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .center{
@@ -37,4 +47,10 @@ code {
 
 .centerText{
   text-align: center;
+}
+
+.resList{
+  list-style-type: none;
+  text-align: center;
+  
 }
