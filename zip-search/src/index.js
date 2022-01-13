@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SearchResults from "./SearchResults";
-
+import Footer from "./Footer"
 ReactDOM.render(
   <React.StrictMode>
+    {/* <Header /> */}
+    <h1>HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER </h1>
     <SearchResults zip={11224}/>
+
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
