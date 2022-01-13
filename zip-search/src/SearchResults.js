@@ -1,15 +1,15 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect, useState } from "react"
 
-function SearchResults(props){
+function SearchResults(props) {
 
-    const[data, setData] = useState(null)
+    const [data, setData] = useState(null)
     const url = `https://ctp-zip-api.herokuapp.com/zip/${props.zip}`
 
     useEffect(() => {
         fetch(`https://ctp-zip-api.herokuapp.com/zip/${props.zip}`)
             .then(res => res.json())
             .then(ret => setData(ret))
-    },[url])
+    }, [url])
 
     if(data && props.zip.length>4 && props.zip.length<6) {
         if(data[0].Zipcode === props.zip) {

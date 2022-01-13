@@ -6,11 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import SearchResults from "./SearchResults";
 import InputBox from "./InputBox"
 import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar/>
-    <InputBox/>
+    <Navbar />
+    <InputBox />
+    <SearchResults />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
