@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SearchResults from "./SearchResults";
 import InputBox from "./InputBox"
@@ -12,7 +11,6 @@ ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <InputBox />
-    <SearchResults />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
