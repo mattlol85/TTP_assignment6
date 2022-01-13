@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import './SearchResults.css';
 
 function SearchResults(props) {
 
@@ -20,7 +21,7 @@ function SearchResults(props) {
                     {data.map((elm) => {
                         return (<div className={"search-res"}>
                                 <h2 className={"city"}>{elm.LocationText}</h2>
-                                <ul>
+                                <ul id="searchList">
                                     <li>{elm.State}</li>
                                     <li>{elm.Location}</li>
                                     <li>{elm.EstimatedPopulation}</li>

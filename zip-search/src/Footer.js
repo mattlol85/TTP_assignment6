@@ -7,10 +7,9 @@ export default function Footer() {
     return (
         <div id='footer' >
             <div id='footerItems'>
-                Item 1
-                Item 2
-                Item 3
-                Item 4
+            Gallelee Thimotus   |
+            Matthew Fitzgerald  |
+            Huiyu Guan
             </div>
             <div id ='bottomOfFooter' className='center' className='centerText'>
                 Ⓒ Group 14

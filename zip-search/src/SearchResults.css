@@ -1,0 +1,33 @@
+.search-res{
+    border: #282828 solid;
+    border-width: 8px;
+    background-color: #3500d3;
+    color: white;
+    width: 600px;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+
+.city{
+    text-align: center;
+    color: white;
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#results{
+    margin: auto;
+    border-color: green;
+    display: flex;
+}
+
+#searchList{
+    list-style-type: none;
+}
