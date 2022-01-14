@@ -19,14 +19,14 @@ function SearchResults(props) {
             return (
                 <div id={"results"}>
                     {data.map((elm) => {
-                        return (<div className={"search-res"}>
-                                <h2 className={"city"}>{elm.LocationText}</h2>
-                                <ul id="searchList">
-                                    <li>{elm.State}</li>
-                                    <li>{elm.Location}</li>
-                                    <li>{elm.EstimatedPopulation}</li>
-                                    <li>{elm.TotalWages}</li>
-                                </ul>
+                            return (<div className={"search-res"}>
+                            <h2 className={"city"}>{elm.City}, {elm.State}</h2>
+                            <ul>
+                                <li>State: {elm.State}</li>
+                                <li>location: {elm.Lat} {elm.Long}</li>
+                                <li>Population(estimated): {elm.EstimatedPopulation}</li>
+                                <li>Total Wages: {elm.TotalWages}</li>
+                            </ul>
                             </div>
                         )
                     })}
